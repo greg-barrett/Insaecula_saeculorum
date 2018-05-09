@@ -1,1 +1,24 @@
-<h1>Contct Page</h1>
+<% provide(:title, "Contact")%>
+
+<%= form_for(@prospect, url:contact_path) do |f| %>
+<%= render 'prospects/error_messages', object: f.object %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+   <%= f.label :first_name %>
+   <%= f.text_field :first_name %>
+
+   <%= f.label :surname %>
+   <%= f.text_field :surname %>
+
+   <%= f.label  :email %>
+   <%= f.email_field :email %>
+
+   <%= f.label :number %>
+   <%= f.text_field :number %>
+
+   <%= f.label :message %>
+   <%= f.text_field :message %>
+
+   <%= f.submit %>
+<% end %>
