@@ -6,8 +6,7 @@ class ProspectsController < ApplicationController
   def create
     @prospect=Prospect.new(prospect_params)
     if @prospect.save
-      #@prospect.send_activation_email
-      flash[:success] = "Thanks for getting in touch. We will reply as soon."
+      flash[:success]="Thanks for getting in touch. We will reply as soon."
       redirect_to root_url
     else
       render 'new'
