@@ -10,4 +10,27 @@ class StaticPagesController < ApplicationController
 
   def vestments
   end
+
+  def copes
+  end
+
+  def chasubles
+  end
+
+  def stoles
+  end
+
+  def altarwear
+  end
+
+  def high_mass_sets
+  end
+
+  def ordinations
+  end
+
+  def alterations
+  end
+
+
 end

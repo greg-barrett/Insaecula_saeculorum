@@ -72,37 +72,19 @@ body {
 
 /*=====Logo=====*/
 .logo {
-  height: 350px;
-  background-color: #182c45;
   background-color: #152863;
-  position: relative;
-}
-.logo-decoration-l {
-  width: 25%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.logo-decoration-r {
-  width: 25%;
-  position: absolute;
-  top: 0;
-  right: 0;
+  background-color: #800;
+ img {
+   width: 80%;
+ }
 }
 
-.logo h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 80px;
-  text-align: center;
-  letter-spacing: 3px;
-  color: #cdb82e;
-  padding-top: 80px;
-}
+
 
 .logo p {
   text-align: center;
   font-family: 'Playfair Display', serif;
-  color: #cdb82e;
+  color: #c5ac84;
   padding-top: 10px;
   font-size: 1.2em;
 }
@@ -142,7 +124,7 @@ text-align: center;
   font-size: 2em;
   line-height: 2em;
   text-align: center;
-  border-bottom: 10px double #D4AF37;
+  border-bottom: 10px double #c5ac84;;
   padding-bottom: 20px;
   margin-bottom: 20px;
   font-family: 'Satisfy', cursive;
@@ -152,7 +134,7 @@ text-align: center;
   font-size: 1.5em;
   color: black;
   line-height: 2em;
-  border-bottom: 10px solid #D4AF37;
+  border-bottom: 10px solid #c5ac84;;
   border-style: double;
   text-align: center;
   letter-spacing: 1.5px;
