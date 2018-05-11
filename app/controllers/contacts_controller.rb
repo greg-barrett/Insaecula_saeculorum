@@ -6,6 +6,7 @@ class ContactsController < ApplicationController
   def create
     contact=Contact.new(contact_params)
     ContactMailer.contact_request_email(contact).deliver_now
+    redirect_to root_url
   end
 
   private
