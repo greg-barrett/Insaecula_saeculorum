@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>You have recieved a contact request via your website, Insaecula Saeculorum</h1>
+    <h2>Contact Details</h2>
+    <p>
+      Title: <%= @contact.title %>
+    </p>
+    <p>
+      First name: <%= @contact.first_name %>
+    </p>
+
+    <p>
+      Surname: <%= @contact.surname %>
+    </p>
+
+    <p>
+      Email Address: <%= @contact.email %>
+    </p>
+
+    <p>
+      Phone number: <%= @contact.number %>
+    </p>
+
+    <p>
+      Message: <%= @contact.message %>
+    </p>
+
+  </body>
+</html>

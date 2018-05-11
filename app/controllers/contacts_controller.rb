@@ -4,13 +4,8 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact=Contact.new(contact_params)
-    if @contact.save
-      flash[:success]="Thanks for getting in touch. We will reply as soon."
-      redirect_to root_url
-    else
-      render 'new'
-    end
+    contact=Contact.new(contact_params)
+    ContactMailer.contact_request_email(contact).deliver_now
   end
 
   private
